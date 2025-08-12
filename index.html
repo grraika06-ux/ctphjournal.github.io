@@ -1,73 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Journal Name</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Current Trends in Pharmaceutical & Clinical Research</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="CTPH — open access, peer-reviewed journal in clinical pharmacy and healthcare.">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">Your Journal Logo</div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Archives</a></li>
-                    <li><a href="#">Submit Paper</a></li>
-                    <li><a href="#">Editorial Board</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <img src="assets/logo.png" alt="CTPH logo" id="logo" onerror="this.style.display='none'">
+        <div class="title">
+          <h1>Current Trends in Pharmaceutical & Clinical Research</h1>
+          <p class="tag">Peer-reviewed • Open Access • Multidisciplinary</p>
         </div>
-    </header>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#editorial">Editorial Board</a>
+        <a href="#guidelines">Author Guidelines</a>
+        <a href="#issues">Issues / Articles</a>
+        <a href="#contact">Contact</a>
+        <a class="cta" id="submitBtn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM">Submit Manuscript</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
+  <main id="home">
     <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to <span>Your Journal Name</span></h1>
-            <p>Publishing high-quality research articles in pharmaceutical sciences and beyond.</p>
-            <a href="#" class="btn">Call for Papers</a>
+      <div class="wrap hero-grid">
+        <div class="hero-left">
+          <h2>Advancing clinical pharmacy and healthcare research</h2>
+          <p>CTPH publishes high-quality original research, reviews, and case reports that inform clinical practice, policy, and drug development.</p>
+          <p class="hero-cta">
+            <a class="btn" id="submitNow" href="https://forms.gle/REPLACE_WITH_YOUR_FORM">Submit Manuscript</a>
+            <a class="btn ghost" href="#guidelines">Author Guidelines</a>
+          </p>
         </div>
+        <div class="hero-right">
+          <div class="stats">
+            <div><strong>Frequency</strong><span>Quarterly</span></div>
+            <div><strong>e-ISSN</strong><span>Applied</span></div>
+            <div><strong>Open Access</strong><span>CC BY 4.0</span></div>
+          </div>
+          <img src="assets/banner.jpg" alt="journal banner" onerror="this.style.display='none'">
+        </div>
+      </div>
     </section>
 
-    <!-- About -->
-    <section class="about container">
-        <h2>About the Journal</h2>
-        <p>
-            Your journal description goes here. Mention your aim, scope, and publication frequency.
-            Highlight your indexing status, open-access policy, and areas of research covered.
-        </p>
+    <section id="about" class="wrap section">
+      <h3>About the Journal</h3>
+      <p>Current Trends in Pharmaceutical & Clinical Research (CTPH) is an open access, peer-reviewed journal publishing research across clinical pharmacy, pharmaceutics, pharmacoeconomics, pharmacoepidemiology, and health policy. We aim to accelerate evidence translation to improve patient care worldwide.</p>
     </section>
 
-    <!-- Latest Issue -->
-    <section class="latest container">
-        <h2>Latest Issue</h2>
-        <div class="issue-card">
-            <h3>Volume 10, Issue 4 (2025)</h3>
-            <p>Published: August 2025</p>
-            <a href="#" class="btn">View Issue</a>
+    <section id="editorial" class="wrap section two-col">
+      <div>
+        <h3>Editorial Board (sample)</h3>
+        <ul>
+          <li><strong>Dr. A. Researcher</strong> — Clinical Pharmacy, University X</li>
+          <li><strong>Prof. B. Scientist</strong> — Pharmaceutics, Institute Y</li>
+          <li><strong>Dr. C. Clinician</strong> — Hospital Z</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Indexing & Policies</h3>
+        <p>We follow COPE guidelines and use double-blind peer review. ISSN and DOIs are issued for published articles. We target DOAJ and Scopus indexing in future.</p>
+        <div class="badges">
+          <span class="badge">Open Access</span>
+          <span class="badge">Peer Reviewed</span>
+          <span class="badge">DOI (Zenodo)</span>
         </div>
+      </div>
     </section>
 
-    <!-- Call for Papers -->
-    <section class="cfp">
-        <div class="container">
-            <h2>Call for Papers</h2>
-            <p>Submit your manuscripts for our upcoming issue. We welcome original research articles, reviews, and case studies.</p>
-            <a href="#" class="btn">Submit Now</a>
-        </div>
+    <section id="guidelines" class="wrap section">
+      <h3>Author Guidelines (short)</h3>
+      <ul>
+        <li>Article types: Original research, Review, Case report, Short communication</li>
+        <li>Structured abstract (≤300 words), max 6 keywords</li>
+        <li>References: Vancouver style preferred</li>
+        <li>All authors must provide ORCID and conflict of interest statement</li>
+      </ul>
+      <p><a href="#guidelines" class="btn ghost">Full Guidelines (PDF)</a></p>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Your Journal Name. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <section id="issues" class="wrap section">
+      <h3>Latest Articles / Issues</h3>
 
+      <div class="search-row">
+        <input id="searchInput" type="search" placeholder="Search articles by title, author, keyword..." />
+      </div>
+
+      <ul id="articleList" class="article-list">
+        <!-- Sample article entries (replace with real content) -->
+        <li data-title="Pharmacokinetics of Drug A" data-author="Author A" data-keywords="pharmacokinetics,drug A">
+          <a href="assets/article1.pdf" target="_blank" class="article-title">Pharmacokinetics of Drug A in Hypertensive Patients</a>
+          <div class="meta">Author A, Author B — Vol 1, Issue 1 — 2025</div>
+        </li>
+
+        <li data-title="Drug Delivery Study" data-author="Author C" data-keywords="drug delivery,nanoparticles">
+          <a href="#" class="article-title">Novel Drug Delivery System for Improved Absorption</a>
+          <div class="meta">Author C — Vol 1, Issue 1 — 2025</div>
+        </li>
+
+        <li data-title="Clinical Trial X" data-author="Author D" data-keywords="clinical trial,RCT">
+          <a href="#" class="article-title">Randomized Trial of Intervention X</a>
+          <div class="meta">Author D — Vol 1, Issue 1 — 2025</div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="cfp" class="wrap section cfp">
+      <h3>Call for Papers</h3>
+      <p>Submit original manuscripts on pharmacy, therapeutics, pharmacoepidemiology, or healthcare policy for the next issue.</p>
+      <a class="btn" href="https://forms.gle/REPLACE_WITH_YOUR_FORM">Submit Manuscript</a>
+    </section>
+
+    <section id="contact" class="wrap section">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:editor@ctphjournal.org">editor@ctphjournal.org</a></p>
+      <p>Publisher: RAMAR Publication (or your name)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-left">&copy; <span id="year"></span> Current Trends in Pharmaceutical & Clinical Research</div>
+      <div class="foot-right">Designed for student journal practice • GitHub Pages demo</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
