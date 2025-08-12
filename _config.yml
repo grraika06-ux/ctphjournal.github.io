@@ -3,5 +3,5 @@ email: editor@ctphjournal.org
 description: >- 
   CTPH publishes timely, peer-reviewed research in clinical pharmacy, pharmaceutics, pharmacoepidemiology and healthcare.
 baseurl: ""   # leave empty for user/org site, or "/ctphjournal" for project page
-url: "https://<your-github-username>.github.io" # replace with your username site
+url: "https://grraika06-ux.github.io/ctphjournal.github.io/" # replace with your username site
 theme: jekyll-theme-cayman   # simple GitHub Pages theme
